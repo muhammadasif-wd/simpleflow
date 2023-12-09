@@ -10,11 +10,6 @@
 			"git add"
 		]
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
