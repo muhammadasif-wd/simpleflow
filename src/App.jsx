@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { Route, Routes } from 'react-router';
+import publicRoutes from './routes/publicRoutes';
+import Loading from './shared/Loading';
 
 function App() {
 	return (
-		<div>
-			<h1 className="text-slate-700 text-4xl">Hello This is home page </h1>
-		</div>
+		<Suspense fallback={<Loading />}>
+			<Routes>
+				{publicRoutes.map(({ path, Component }, index) => {
+					return <Route key={index} path={`${path}`} element={<Component />} />;
+				})}
+			</Routes>
+		</Suspense>
 	);
 }
 

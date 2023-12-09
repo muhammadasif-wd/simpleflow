@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import Loading from '../shared/Loading';
 
 const Home = () => {
-	return <div>Home</div>;
+	return (
+		<Suspense fallback={<Loading />}>
+			<div>Home</div>
+		</Suspense>
+	);
 };
 
 export default Home;
