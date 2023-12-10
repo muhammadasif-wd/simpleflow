@@ -7,9 +7,11 @@ const ServiceCard = () => {
             <div className='bg-[#07075d] w-80 h-80 border-solid border-2 border-lightSecondary text-white'>
                 <div className='text-center'>
                     <div>
+                        <img src="" alt="" />
                         <h1>Design</h1>
                         <p> dolor sit amet consectetur adipisicing <br /> elit. Nostrum?
                         </p>
+                        <p></p>
                     </div>
                 </div>
             </div>
