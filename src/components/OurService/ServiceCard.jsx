@@ -7,7 +7,7 @@ const ServiceCard = () => {
             <div className='bg-[#07075d] w-80 h-80 border-solid border-2 border-lightSecondary text-white'>
                 <div className='text-center'>
                     <div>
-                        <img src="" alt="" />
+                            <img src="" alt="" />
                         <h1>Design</h1>
                         <p> dolor sit amet consectetur adipisicing <br /> elit. Nostrum?
                         </p>
@@ -22,6 +22,7 @@ const ServiceCard = () => {
             {/* third card (active on hover) */}
             <div className='hover:bg-primaryColor  w-80 h-80 border-solid border-2 border-lightSecondary hover:text-white'>
                 <h2>hallo</h2>
+
             </div>
         </div>
     );
