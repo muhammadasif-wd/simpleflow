@@ -9,7 +9,9 @@ const Team = () => {
 		<HeadingText heading={'Our Team'} subheading={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'}></HeadingText>
 		<div>Team</div>
 		<TeamInfo></TeamInfo>
+		<div className='w-full mx-auto'>
 		<Service></Service>
+		</div>
 	</>
 	);
 };
