@@ -15,9 +15,10 @@ export default {
 			'2xl': '1536px', // => for big desktop device
 		},
 		colors: {
-			primaryColorColor: '#07075d',
+			primaryColor: '#07075d',
 			secondaryColor: '#bf3f6f',
 			lightSecondary: '#ea4447',
+			white: '#fff',
 			dark: '#272829',
 		},
 		extend: {},
