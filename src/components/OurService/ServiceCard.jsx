@@ -1,73 +1,52 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
+import { service_card } from '../../data/service_card';
 
 const ServiceCard = () => {
 	return (
-		<div className="flex justify-center gap-7">
-			{/* first card (always active) */}
-			<div className="bg-[#07075d] w-80 h-80  text-white flex items-center justify-center">
-				<div className="text-center">
-					<div>
+		<div className="flex justify-center gap-7 my-10">
+			{service_card.slice(0, 1).map(({ img, title, subtitle }, index) => (
+				<div key={index} className="group bg-primaryColor w-80 h-80 flex items-center justify-center shadow drop-shadow-xl">
+					<div className="text-center text-dark">
 						<div className="flex justify-center items-center">
-							<div className="bg-gradient-to-r from-secondaryColor to-lightSecondary rounded-full w-16 h-16 flex justify-center items-center">
+							<div className="bg-gradient-to-r from-secondaryColor to-lightSecondary rounded-full w-28 h-28 flex justify-center items-center">
 								<Icon
-									className="hover:animate-ping"
-									icon="fluent-emoji-high-contrast:artist-palette"
+									className="group-hover:animate-ping text-white"
+									icon={`${img}`}
 									hFlip={true}
+									width={40}
 								/>
 							</div>
 						</div>
-						<h1 className="text-2xl font-bold my-4">Design</h1>
-						<p>
-							{' '}
-							dolor sit amet consectetur adipisicing <br /> elit. Nostrum?
-						</p>
-						<p></p>
+						<article className='text-white'>
+							<h1 className="text-2xl font-bold my-4">{title}</h1>
+							<p className="my-2">{subtitle}</p>
+						</article>
 					</div>
 				</div>
-			</div>
+			))}
+
 			{/* second card (active on hover) */}
-			<div className="hover:bg-primaryColor w-80 h-80  hover:text-white text-dark flex items-center justify-center">
-				<div className="text-center">
-					<div>
+			{service_card.slice(1, 99999).map(({ img, title, subtitle }, index) => (
+				<div key={index} className="group hover:bg-primaryColor w-80 h-80 flex items-center justify-center shadow drop-shadow-xl">
+					<div className="text-center text-dark">
 						<div className="flex justify-center items-center">
-							<div className="bg-gradient-to-r from-secondaryColor to-lightSecondary rounded-full w-16 h-16 flex justify-center items-center">
+							<div className="bg-gradient-to-r from-secondaryColor to-lightSecondary rounded-full w-28 h-28 flex justify-center items-center">
 								<Icon
-									className="hover:animate-ping"
-									icon="fluent-emoji-high-contrast:artist-palette"
+									className="group-hover:animate-ping text-white"
+									icon={`${img}`}
 									hFlip={true}
+									width={40}
 								/>
 							</div>
 						</div>
-						<h1 className="text-2xl font-bold my-4">Development</h1>
-						<p className="my-2">
-							dolor sit amet consectetur adipisicing <br /> elit. Nostrum?
-						</p>
-						<p></p>
+						<article className='group-hover:text-white'>
+							<h1 className="text-2xl font-bold my-4">{title}</h1>
+							<p className="my-2">{subtitle}</p>
+						</article>
 					</div>
 				</div>
-			</div>
-			{/* third card (active on hover) */}
-			<div className="hover:bg-primaryColor w-80 h-80  hover:text-white text-dark flex items-center justify-center">
-				<div className="text-center">
-					<div>
-						<div className="flex justify-center items-center">
-							<div className="bg-gradient-to-r from-secondaryColor to-lightSecondary rounded-full w-16 h-16 flex justify-center items-center">
-								<Icon
-									className="hover:animate-ping"
-									icon="fluent-emoji-high-contrast:artist-palette"
-									hFlip={true}
-								/>
-							</div>
-						</div>
-						<h1 className="text-2xl font-bold my-4">Marketing</h1>
-						<p className="my-2">
-							dolor sit amet consectetur adipisicing <br /> elit. Nostrum?
-						</p>
-						<p></p>
-					</div>
-				</div>
-			</div>
+			))}
 		</div>
 	);
 };

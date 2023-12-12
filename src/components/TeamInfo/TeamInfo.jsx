@@ -1,35 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { Suspense } from 'react';
 import UnderLine from '../../styles/UnderLine';
+import { team_info } from '../../data/team_info';
+import Loading from '../../shared/Loading';
 
 const TeamInfo = () => {
-    const [teamsInfo, setTeamInfo] = useState([])
-
-    useEffect(() => {
-        fetch('teamInfo.json')
-            .then(res => res.json())
-            .then(data => setTeamInfo(data))
-    }, [])
-
-
     return (
-        <div>
+        <Suspense fallback={<Loading />}>
             <div className='flex justify-center'>
-                <UnderLine></UnderLine>
+                <UnderLine />
             </div>
             <div className='grid md:grid-cols-4 grid-cols-1 w-4/5 mx-auto text-center'>
-                {
-                    teamsInfo.map(team => <>
-                        <div className=''>
-                            <div className=''>
-                                <img src={team.img} alt="" />
-                                <p className='text-xl font-bold'>{team.name}</p>
-                                <p>{team.occupation}</p>
-                            </div>
-                        </div>
-                    </>)
+                {team_info.map(team => {
+                    <article className=''>
+                        <img src={team.img} alt="" />
+                        <p className='text-xl font-bold'>{team.name}</p>
+                        <p>{team.occupation}</p>
+                    </article>
+                })
                 }
             </div>
-        </div>
+        </Suspense>
     );
 };
 

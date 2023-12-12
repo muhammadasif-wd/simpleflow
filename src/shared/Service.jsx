@@ -1,13 +1,11 @@
 import React from 'react';
 import UnderLine from '../styles/UnderLine';
-import { BsBootstrapFill } from "react-icons/bs";
-import { GrUserExpert } from "react-icons/gr";
 import { Icon } from '@iconify/react';
 
 const Service = () => {
     return (
         <div className='my-10 text-[#fff] mx-auto w-full'>
-            <div className='bg-[#07085d] relative'>
+            <div className='bg-primaryColor relative'>
                 <img className='h-[60vh] opacity-30' src="https://i.ibb.co/8rSNXk0/feature.jpg" alt="" />
                 <div className='absolute top-9 lg:flex  justify-evenly'>
                     <div className=''>
@@ -19,8 +17,8 @@ const Service = () => {
                         <div className='grid lg:grid-cols-2 gap-5'>
                             <div className='flex'>
                                 <h2 className='mx-5'>
-                                <GrUserExpert />
-                               
+                                    <Icon icon="basil:user-solid" />
+
                                 </h2>
                                 <div>
                                     <h1 className='text-lg font-semibold'>User Experience</h1>
@@ -29,7 +27,7 @@ const Service = () => {
                             </div>
                             <div className='flex'>
                                 <h2 className='mx-5'>
-                                <Icon icon="material-symbols:responsive-layout" />
+                                    <Icon icon="material-symbols:responsive-layout" />
                                 </h2>
                                 <div>
                                     <h1 className='text-lg font-semibold'>Responsive Layout</h1>
@@ -38,7 +36,7 @@ const Service = () => {
                             </div>
                             <div className='flex'>
                                 <h2 className='mx-5'>
-                                <Icon icon="cib:digital-ocean" />
+                                    <Icon icon="cib:digital-ocean" />
                                 </h2>
                                 <div>
                                     <h1 className='text-lg font-semibold'>Digital Solutions</h1>
@@ -47,7 +45,7 @@ const Service = () => {
                             </div>
                             <div className='flex'>
                                 <h2 className='mx-5'>
-                                <BsBootstrapFill />
+                                    <Icon icon="mdi:bootstrap" />
                                 </h2>
                                 <div>
                                     <h1 className='text-lg font-semibold'>Bootstrap 4x</h1>

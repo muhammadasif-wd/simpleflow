@@ -8,11 +8,10 @@ const ServiceCard = lazy(() => import('./../components/OurService/ServiceCard'))
 const Home = () => {
 	return (
 		<Suspense fallback={<Loading />}>
-			<div>Home</div>
-			<Team></Team>
 			<Hero></Hero>
 			<OurService></OurService>
 			<ServiceCard></ServiceCard>
+			<Team></Team>
 		</Suspense>
 	);
 };
