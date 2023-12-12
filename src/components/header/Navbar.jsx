@@ -15,13 +15,10 @@ import React from 'react';
 const Header = () => {
 	return (
 		<main>
-			<Navbar
-				className="bg-primaryColor/0 backdrop-blur-none text-white"
-				shouldHideOnScroll
-			>
+			<Navbar className="bg-no-repeat fixed w-full p-3 text-base bg-[url('https://demo.themefisher.com/agen-bootstrap/images/banner/banner2.jpg')] backdrop-blur-none text-white" shouldHideOnScroll>
 				<NavbarBrand>
 					<Link href="/">
-						<p className="font-bold text-inherit text-white">Simple Flow</p>
+						<p className="font-bold text-inherit text-white text-2xl">Simple Flow</p>
 					</Link>
 				</NavbarBrand>
 				<NavbarContent
@@ -33,8 +30,7 @@ const Header = () => {
 							<DropdownTrigger>
 								<Button
 									disableRipple
-									className="p-0 bg-transparent data-[hover=true]:bg-transparent text-white font-semibold"
-									radius="sm"
+									className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium"
 									variant="light"
 								>
 									About
@@ -53,7 +49,7 @@ const Header = () => {
 								href="/about-us"
 								key="About Us"
 								description="See Our About Us"
-								className="text-dark"
+								className="text-dark text-base"
 							>
 								About Us
 							</DropdownItem>
@@ -62,7 +58,7 @@ const Header = () => {
 								href="/our-team"
 								key="Our Team"
 								description="See Our Legendary Team Member"
-								className="text-dark"
+								className="text-dark text-base"
 							>
 								Our Team
 							</DropdownItem>
@@ -71,7 +67,7 @@ const Header = () => {
 								href="/career"
 								key="Career"
 								description="See Our Recent Career"
-								className="text-dark"
+								className="text-dark text-base"
 							>
 								Career
 							</DropdownItem>
@@ -80,7 +76,7 @@ const Header = () => {
 								href="/events"
 								key="Events "
 								description="See Our Events"
-								className="text-dark"
+								className="text-dark text-base"
 							>
 								Events
 							</DropdownItem>
@@ -88,21 +84,21 @@ const Header = () => {
 					</Dropdown>
 				</NavbarContent>
 				<NavbarContent
-					className="hidden sm:flex gap-4 text-white"
+					className="hidden sm:flex gap-4 text-white text-base"
 					justify="center"
 				>
 					<NavbarItem>
-						<Link className="text-white" href="/services">
+						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/services">
 							Services
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link className="text-white" href="/portfolios">
+						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/portfolios">
 							Portfolio
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link className="text-white" href="/contacts">
+						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/contacts">
 							Contact
 						</Link>
 					</NavbarItem>
