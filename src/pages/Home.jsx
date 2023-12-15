@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import Loading from '../shared/Loading';
-import Team from './about/Team';
+import Around from '../components/home/Around';
 const Hero = lazy(() => import('../components/home/Hero'));
 const OurServices = lazy(() => import('../components/home/OurServices'));
 
@@ -9,7 +9,7 @@ const Home = () => {
 		<Suspense fallback={<Loading />}>
 			<Hero />
 			<OurServices />
-			<Team />
+			<Around />
 		</Suspense>
 	);
 };

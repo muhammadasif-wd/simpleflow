@@ -6,10 +6,10 @@ import { service_card } from '../../data/service_card';
 
 const OurServices = () => {
 	return (
-		<main className="text-center text-dark">
+		<main className="text-center text-dark py-10">
 			<section>
 				<HeadingText
-					styles={'md:w-1/2 mx-auto my-3'}
+					styles={'lg:w-1/2 md:w-2/3 w-11/12 mx-auto my-3'}
 					heading={'Our services'}
 					subheading={`Tech firms provide software development, web/mobile apps, IT consulting,
 					cloud services, cybersecurity, data analytics, UI/UX design, and
@@ -20,7 +20,7 @@ const OurServices = () => {
 					<UnderLine style={'w-48 h-2'} />
 				</div>
 			</section>
-			<section className="flex justify-center gap-7 my-10">
+			<section className="flex flex-wrap justify-center gap-7 my-10">
 				{service_card?.map(({ img, title, subtitle, isActive }, index) => (
 					<OurService key={index} img={img} title={title} subtitle={subtitle} isActive={isActive} />
 				))}

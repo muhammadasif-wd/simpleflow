@@ -1,11 +1,10 @@
 import React from 'react';
+import Title from '../../shared/Title';
 
 const Hero = () => {
 	return (
 		<div className="bg-no-repeat max-w-full bg-[url('https://demo.themefisher.com/agen-bootstrap/images/banner/banner2.jpg')] text-white">
-			<h1 className="text-8xl font-bold flex justify-center h-screen text-white items-center">
-				Creative Agency
-			</h1>
+			<Title title={`Creative Agency`} styles={'lg:h-screen md:h-[50vh] h-[60vh] flex justify-center items-center text-white font-bold'} />
 		</div>
 	);
 };
