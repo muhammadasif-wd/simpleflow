@@ -1,6 +1,6 @@
 import React from 'react';
-import UnderLine from '../styles/UnderLine';
-import { Icon } from '@iconify/react';
+// import { Icon } from '@iconify/react';
+import UnderLine from './UnderLine';
 
 const Service = () => {
     return (
@@ -17,7 +17,7 @@ const Service = () => {
                         <div className='grid lg:grid-cols-2 gap-5'>
                             <div className='flex'>
                                 <h2 className='mx-5'>
-                                    <Icon icon="basil:user-solid" />
+                                    {/* <Icon icon="basil:user-solid" /> */}
 
                                 </h2>
                                 <div>
@@ -27,7 +27,7 @@ const Service = () => {
                             </div>
                             <div className='flex'>
                                 <h2 className='mx-5'>
-                                    <Icon icon="material-symbols:responsive-layout" />
+                                    {/* <Icon icon="material-symbols:responsive-layout" /> */}
                                 </h2>
                                 <div>
                                     <h1 className='text-lg font-semibold'>Responsive Layout</h1>
@@ -36,7 +36,7 @@ const Service = () => {
                             </div>
                             <div className='flex'>
                                 <h2 className='mx-5'>
-                                    <Icon icon="cib:digital-ocean" />
+                                    {/* <Icon icon="cib:digital-ocean" /> */}
                                 </h2>
                                 <div>
                                     <h1 className='text-lg font-semibold'>Digital Solutions</h1>
@@ -45,7 +45,7 @@ const Service = () => {
                             </div>
                             <div className='flex'>
                                 <h2 className='mx-5'>
-                                    <Icon icon="mdi:bootstrap" />
+                                    {/* <Icon icon="mdi:bootstrap" /> */}
                                 </h2>
                                 <div>
                                     <h1 className='text-lg font-semibold'>Bootstrap 4x</h1>

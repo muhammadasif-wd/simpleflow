@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
-import UnderLine from '../../styles/UnderLine';
 import { team_info } from '../../data/team_info';
 import Loading from '../../shared/Loading';
+import UnderLine from '../../shared/UnderLine';
 
 const TeamInfo = () => {
     return (
