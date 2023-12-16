@@ -1,9 +1,10 @@
 import React, { Suspense, lazy } from 'react';
 import Loading from '../shared/Loading';
-import Around from '../components/home/Around';
-import OurTeams from '../components/home/OurTeams';
 const Hero = lazy(() => import('../components/home/Hero'));
 const OurServices = lazy(() => import('../components/home/OurServices'));
+const Around = lazy(() => import('../components/home/Around'));
+const OurTeams = lazy(() => import('../components/home/OurTeams'));
+const AboutMe = lazy(() => import('../components/home/AboutMe'));
 
 const Home = () => {
 	return (
@@ -12,6 +13,7 @@ const Home = () => {
 			<OurServices />
 			<Around />
 			<OurTeams />
+			<AboutMe />
 		</Suspense>
 	);
 };

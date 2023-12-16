@@ -11,11 +11,12 @@ import {
 	NavbarItem,
 } from '@nextui-org/react';
 import React from 'react';
+import { images } from '../../shared/images';
 
 const Header = () => {
 	return (
 		<main>
-			<Navbar className="bg-no-repeat fixed w-full p-3 text-base bg-[url('https://demo.themefisher.com/agen-bootstrap/images/banner/banner2.jpg')] backdrop-blur-none text-white" shouldHideOnScroll>
+			<Navbar style={{ backgroundImage: `url(${images.home_banner})`, backgroundRepeat: 'no-repeat' }} className={`fixed w-full p-3 text-base backdrop-blur-none text-white`} shouldHideOnScroll>
 				<NavbarBrand>
 					<Link href="/">
 						<p className="font-bold text-inherit text-white text-2xl">Simple Flow</p>
@@ -104,7 +105,7 @@ const Header = () => {
 					</NavbarItem>
 				</NavbarContent>
 			</Navbar>
-		</main>
+		</main >
 	);
 };
 
