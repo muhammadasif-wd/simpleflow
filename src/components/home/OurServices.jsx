@@ -2,7 +2,7 @@ import React from 'react';
 import HeadingText from '../../shared/HeadingText';
 import UnderLine from '../../shared/UnderLine';
 import OurService from './OurService';
-import { service_card } from '../../data/service_card';
+import { service_card } from '../../data/home/service_card';
 
 const OurServices = () => {
 	return (
