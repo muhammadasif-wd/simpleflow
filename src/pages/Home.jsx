@@ -1,4 +1,5 @@
 import React, { Suspense, lazy } from 'react';
+import LatestCard from '../components/latest news/LatestCard';
 import WhoWeAre from '../components/whoWeAre/WhoWeAre';
 import Loading from '../shared/Loading';
 import Team from './About/Team';
@@ -16,6 +17,7 @@ const Home = () => {
 			<ServiceCard></ServiceCard>
 			<Team></Team>
 			<WhoWeAre></WhoWeAre>
+			<LatestCard></LatestCard>
 		</Suspense>
 	);
 };
