@@ -5,6 +5,7 @@ const OurServices = lazy(() => import('../components/home/OurServices'));
 const Around = lazy(() => import('../components/home/Around'));
 const OurTeams = lazy(() => import('../components/home/OurTeams'));
 const AboutMe = lazy(() => import('../components/home/AboutMe'));
+const Features = lazy(() => import('../components/home/Features'));
 
 const Home = () => {
 	return (
@@ -14,6 +15,7 @@ const Home = () => {
 			<Around />
 			<OurTeams />
 			<AboutMe />
+			<Features />
 		</Suspense>
 	);
 };
