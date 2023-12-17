@@ -10,8 +10,8 @@ const AboutMe = () => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     return (
-        <main style={{ backgroundImage: `url(${images.about_bg})`, backgroundRepeat: 'no-repeat', backgroundPosition: "right" }} className='h-[80vh]'>
-            <section style={{ backgroundImage: `url(${images.about_bg_overlay})`, backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} className='h-[80vh]'>
+        <main style={{ backgroundImage: `url(${images?.about_bg})`, backgroundRepeat: 'no-repeat', backgroundPosition: "right" }} className='h-[60vh]'>
+            <section style={{ backgroundImage: `url(${images?.about_bg_overlay})`, backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} className='h-[60vh]'>
                 <section className='xl:w-10/12 w-11/12 mx-auto grid md:grid-cols-2'>
                     <div className='p-3 mt-24'>
                         <Title title={`Who We Are`} styles={'font-bold text-white'} />

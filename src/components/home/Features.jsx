@@ -11,7 +11,7 @@ const Features = () => {
         <main className='my-10'>
             <HeadingText heading={`Our Feature Works`} styles={'font-bold'} />
             <UnderLine style={`w-40 h-1.5 mx-auto`} />
-            <div className='flex flex-wrap w-4/5 mx-auto my-10 justify-center gap-3'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-fit mx-auto my-10 place-items-center gap-3'>
                 {features.map(({ img, title, link, gitLink }, index) => (
                     <div className='relative group w-72 h-72' key={index}>
                         <div>
