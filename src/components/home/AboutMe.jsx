@@ -10,8 +10,8 @@ const AboutMe = () => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     return (
-        <main style={{ backgroundImage: `url(${images?.about_bg})`, backgroundRepeat: 'no-repeat', backgroundPosition: "right" }} className='md:h-[60vh] h-[80vh]'>
-            <section style={{ backgroundImage: `url(${images?.about_bg_overlay})`, backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} className='md:h-[60vh] h-[80vh]'>
+        <main style={{ backgroundImage: `url(${images?.about_bg})`, backgroundRepeat: 'no-repeat', backgroundPosition: "right" }} className='h-[30rem]'>
+            <section style={{ backgroundImage: `url(${images?.about_bg_overlay})`, backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} className='h-[30rem]'>
                 <section className='xl:w-10/12 w-11/12 mx-auto grid md:grid-cols-2'>
                     <div className='p-3 lg:mt-24 mt-16'>
                         <Title title={`Who We Are`} styles={'font-bold text-white'} />
@@ -20,7 +20,7 @@ const AboutMe = () => {
                         </article>
                         <DefaultButton name={`Read more`} styles={'font-semibold rounded-full w-40 my-3'} />
                     </div>
-                    <div className='flex justify-end items-end h-full'>
+                    <div className='w-20 mr-0 flex justify-end items-end h-full'>
                         <DefaultButton event={onOpen} name={<Icon className='w-10 h-10' icon="ph:play-bold" />} styles={'rounded-full !w-20 !h-20'} />
                     </div>
                 </section>

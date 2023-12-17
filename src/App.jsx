@@ -8,11 +8,13 @@ function App() {
 	return (
 		<Suspense fallback={<Loading />}>
 			<Header />
-			<Routes>
-				{publicRoutes.map(({ path, Component }, index) => {
-					return <Route key={index} path={`${path}`} element={<Component />} />;
-				})}
-			</Routes>
+			<main className='main'>
+				<Routes>
+					{publicRoutes.map(({ path, Component }, index) => {
+						return <Route key={index} path={`${path}`} element={<Component />} />;
+					})}
+				</Routes>
+			</main>
 		</Suspense>
 	);
 }

@@ -4,6 +4,7 @@ import UnderLine from '../../shared/UnderLine';
 import news_info from '../../data/home/news_info';
 import { Image, Link } from '@nextui-org/react';
 import DefaultButton from '../../shared/DefaultButton';
+import Subtitle from '../../shared/Subtitle';
 
 const News = () => {
     return (
@@ -24,10 +25,8 @@ const News = () => {
                         </Link>
                         <span className='p-3'>{date}</span>
                         <article className="p-3">
-                            <h2 className="mb-2 text-2xl font-bold tracking-tight text-dark/90 dark:text-white">
-                                {title}
-                            </h2>
-                            <p className="mb-3 font-normal text-dark/90">
+                            <Subtitle subtitle={title} styles={`font-bold text-dark/90`} />
+                            <p className="my-3 font-normal text-dark/90">
                                 {description}
                             </p>
                             <DefaultButton name={`Read more`} styles={`rounded-md`} />
