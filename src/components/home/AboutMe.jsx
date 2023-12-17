@@ -10,10 +10,10 @@ const AboutMe = () => {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     return (
-        <main style={{ backgroundImage: `url(${images?.about_bg})`, backgroundRepeat: 'no-repeat', backgroundPosition: "right" }} className='h-[60vh]'>
-            <section style={{ backgroundImage: `url(${images?.about_bg_overlay})`, backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} className='h-[60vh]'>
+        <main style={{ backgroundImage: `url(${images?.about_bg})`, backgroundRepeat: 'no-repeat', backgroundPosition: "right" }} className='md:h-[60vh] h-[80vh]'>
+            <section style={{ backgroundImage: `url(${images?.about_bg_overlay})`, backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} className='md:h-[60vh] h-[80vh]'>
                 <section className='xl:w-10/12 w-11/12 mx-auto grid md:grid-cols-2'>
-                    <div className='p-3 mt-24'>
+                    <div className='p-3 lg:mt-24 mt-16'>
                         <Title title={`Who We Are`} styles={'font-bold text-white'} />
                         <article className='text-white my-10 drop-shadow-2xl'>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

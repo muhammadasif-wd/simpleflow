@@ -20,7 +20,7 @@ const OurServices = () => {
 					<UnderLine style={'w-48 h-2'} />
 				</div>
 			</section>
-			<section className="flex flex-wrap justify-center gap-7 my-10">
+			<section className="w-fit mx-auto flex flex-wrap justify-center gap-7 my-10">
 				{service_card?.map(({ img, title, subtitle, isActive }, index) => (
 					<OurService key={index} img={img} title={title} subtitle={subtitle} isActive={isActive} />
 				))}

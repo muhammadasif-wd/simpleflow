@@ -17,7 +17,7 @@ const OurTeams = () => {
                 {team_info.map(({ name, position, img, description }, index) => (
                     <div key={index} className='group'>
                         <div className='border p-3 border-dark/10 drop-shadow shadow w-fit h-96 rounded-xl group-hover:-translate-y-3 duration-300'>
-                            <Image isZoomed className='w-[100vw] h-40' src={`${img}`} alt={name + position} />
+                            <Image isZoomed className='w-[100vw] 3xl:h-[200px] h-40 object-center' src={`${img}`} alt={name + position} />
                             <article>
                                 <Subtitle subtitle={name} styles={`text-center font-semibold mt-3`} />
                                 <h1 className='text-center text-base font-medium'>{position}</h1>
