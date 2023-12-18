@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 const Home = lazy(() => import('../pages/Home'));
-const About = lazy(() => import('../pages/About/About'));
+const About = lazy(() => import('../pages/about/About'));
 
 const publicRoutes = [
 	{ path: '/', Component: Home },

@@ -1,6 +1,5 @@
 import React, { Suspense } from 'react';
 import { Route, Routes } from 'react-router';
-import Footer from './components/header/Footer';
 import Header from './components/header/Navbar';
 import publicRoutes from './routes/publicRoutes';
 import Loading from './shared/Loading';
@@ -14,7 +13,6 @@ function App() {
 					return <Route key={index} path={`${path}`} element={<Component />} />;
 				})}
 			</Routes>
-			<Footer></Footer>
 		</Suspense>
 	);
 }

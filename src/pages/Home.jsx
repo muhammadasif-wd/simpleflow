@@ -1,6 +1,4 @@
 import React, { Suspense, lazy } from 'react';
-import LatestCard from '../components/latest news/LatestCard';
-import WhoWeAre from '../components/whoWeAre/WhoWeAre';
 import Loading from '../shared/Loading';
 import Team from './About/Team';
 const Hero = lazy(() => import('./../components/hero/Hero'));
@@ -16,8 +14,6 @@ const Home = () => {
 			<OurService></OurService>
 			<ServiceCard></ServiceCard>
 			<Team></Team>
-			<WhoWeAre></WhoWeAre>
-			<LatestCard></LatestCard>
 		</Suspense>
 	);
 };
