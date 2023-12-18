@@ -6,7 +6,6 @@
 * {
 	font-family: 'Inter', sans-serif;
 	max-width: 1920px;
-	margin: 0 auto;
 }
 
 /* loader */
@@ -33,4 +32,35 @@
 	to {
 		transform: rotate(360deg);
 	}
+}
+/* pricing card */
+.bottom-shape::after {
+	position: absolute;
+	content: '';
+	opacity: 0.8;
+	height: 100%;
+	width: 100%;
+	transform: rotate(40deg);
+	background: linear-gradient(
+		37deg,
+		rgb(180, 62, 121) 1%,
+		rgb(247, 70, 58) 100%
+	);
+	left: 20%;
+	top: 55%;
+}
+.bottom-shape::before {
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	transform: rotate(40deg);
+	background: linear-gradient(
+		37deg,
+		rgb(180, 62, 121) 1%,
+		rgb(247, 70, 58) 100%
+	);
+	left: 0;
+	top: 60%;
+	opacity: 0.5;
 }
