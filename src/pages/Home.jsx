@@ -7,6 +7,7 @@ const OurTeams = lazy(() => import('../components/home/OurTeams'));
 const AboutMe = lazy(() => import('../components/home/AboutMe'));
 const Features = lazy(() => import('../components/home/Features'));
 const News = lazy(() => import('../components/home/News'));
+const PricingCard = lazy(() => import('../components/home/PricingCard'));
 
 const Home = () => {
 	return (
@@ -17,6 +18,7 @@ const Home = () => {
 			<OurTeams />
 			<AboutMe />
 			<Features />
+			<PricingCard />
 			<News />
 		</Suspense>
 	);
