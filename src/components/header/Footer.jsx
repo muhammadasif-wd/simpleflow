@@ -8,7 +8,7 @@ const Footer = () => {
 			<footer className="bg-[url('https://demo.themefisher.com/agen-bootstrap/images/backgrounds/map.png')] h-96 max-w-full dark:bg-gray-900 bg-cover">
 				<div className="flex flex-col justify-center items-center h-full">
 					{footer_items.map((item) => (
-						<FooterItem item={item.data} key={item.data._id}></FooterItem>
+						<FooterItem item={item} key={item._id}></FooterItem>
 					))}
 				</div>
 			</footer>

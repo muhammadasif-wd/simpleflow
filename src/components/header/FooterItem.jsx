@@ -4,7 +4,7 @@ import React from 'react';
 
 const FooterItem = ({ item }) => {
 	console.log(item);
-	const { aboutCompany, followUsMessage, location } = item[0];
+	const { followUsMessage, aboutCompany, location } = item;
 	return (
 		<div>
 			<div className="  text-white">
