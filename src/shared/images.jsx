@@ -1,5 +1,6 @@
 import home_banner from '../assets/home/home_banner.jpg'
 import about_bg_overlay from '../assets/home/about-bg-overlay.png'
+import map from '../assets/home/map.png'
 import about_bg from '../assets/home/about-bg.jpg'
 import side_img from '../assets/home/feature.jpg'
 
@@ -31,4 +32,5 @@ export const images = {
     man2,
     man3,
     man4,
+    map,
 }
