@@ -33,6 +33,7 @@
 		transform: rotate(360deg);
 	}
 }
+
 /* pricing card */
 .bottom-shape::after {
 	position: absolute;
@@ -63,4 +64,25 @@
 	left: 0;
 	top: 60%;
 	opacity: 0.5;
+}
+.swiper-button-next {
+	background-image: url('../assets/arrow.svg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
+}
+.swiper-button-prev {
+	transform: rotate(180deg);
+	/* transform-origin: left top; */
+	background-image: url('../assets/arrow.svg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
+}
+
+.swiper-button-next::after {
+	display: none;
+}
+.swiper-button-prev::after {
+	display: none;
 }

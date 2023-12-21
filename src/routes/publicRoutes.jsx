@@ -4,7 +4,7 @@ const About = lazy(() => import('../pages/about/About'));
 
 const publicRoutes = [
 	{ path: '/', Component: Home },
-	{ path: '/about', Component: About },
+	{ path: '/about-us', Component: About },
 ];
 
 export default publicRoutes;
