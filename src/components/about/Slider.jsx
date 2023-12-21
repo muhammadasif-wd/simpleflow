@@ -15,9 +15,13 @@ const Slider = () => {
     return (
         <Suspense fallback={<Loading />}>
             <div style={{ backgroundImage: `url(${images.about_banner})`, backgroundRepeat: 'no-repeat' }} className='relative'>
-                <HeadingText heading={`Our Client Testimonials`} subheading={`See our valuable client review`} styles={`my-10`} />
                 <div className='bg-primaryColor'>
-                    <div className='w-1/2 mx-auto p-10'>
+                    <HeadingText
+                        heading={`Our Client Testimonials`}
+                        subheading={`See our valuable client review`}
+                        styles={`py-10 text-white`}
+                    />
+                    <div className='w-1/2 mx-auto pb-10'>
                         <Swiper
                             effect={'flip'}
                             grabCursor={true}
