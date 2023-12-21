@@ -1,8 +1,8 @@
 import React from 'react';
+import { service_card } from '../../data/home/service_card';
 import HeadingText from '../../shared/HeadingText';
 import UnderLine from '../../shared/UnderLine';
 import OurService from './OurService';
-import { service_card } from '../../data/home/service_card';
 
 const OurServices = () => {
 	return (
@@ -16,13 +16,19 @@ const OurServices = () => {
 					hardware solutions. They develop software, manage systems, ensure
 					security, analyze data, and offer design and consulting services.`}
 				/>
-				<div className='flex justify-center'>
+				<div className="flex justify-center">
 					<UnderLine style={'w-48 h-2'} />
 				</div>
 			</section>
 			<section className="w-fit mx-auto flex flex-wrap justify-center gap-7 my-10">
 				{service_card?.map(({ img, title, subtitle, isActive }, index) => (
-					<OurService key={index} img={img} title={title} subtitle={subtitle} isActive={isActive} />
+					<OurService
+						key={index}
+						img={img}
+						title={title}
+						subtitle={subtitle}
+						isActive={isActive}
+					/>
 				))}
 			</section>
 		</main>

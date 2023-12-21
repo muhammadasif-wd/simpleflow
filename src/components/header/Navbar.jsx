@@ -16,13 +16,20 @@ import { images } from '../../shared/images';
 const Header = () => {
 	return (
 		<main>
-			<Navbar style={{ backgroundImage: `url(${images.home_banner})`, backgroundRepeat: 'no-repeat' }} className={`fixed w-full p-3 text-base backdrop-blur-none text-white`} shouldHideOnScroll>
-				<NavbarContent
-					justify="center"
-				>
+			<Navbar
+				style={{
+					backgroundImage: `url(${images.home_banner})`,
+					backgroundRepeat: 'no-repeat',
+				}}
+				className={`fixed w-full p-3 text-base backdrop-blur-none text-white`}
+				shouldHideOnScroll
+			>
+				<NavbarContent justify="center">
 					<NavbarBrand>
 						<Link href="/">
-							<p className="font-bold text-inherit text-white text-2xl">Simple Flow</p>
+							<p className="font-bold text-inherit text-white text-2xl">
+								Simple Flow
+							</p>
 						</Link>
 					</NavbarBrand>
 					<NavbarItem></NavbarItem>
@@ -88,23 +95,32 @@ const Header = () => {
 						</Dropdown>
 					</NavbarItem>
 					<NavbarItem>
-						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/services">
+						<Link
+							className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium"
+							href="/services"
+						>
 							Services
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/portfolios">
+						<Link
+							className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium"
+							href="/portfolios"
+						>
 							Portfolio
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/contacts">
+						<Link
+							className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium"
+							href="/contacts"
+						>
 							Contact
 						</Link>
 					</NavbarItem>
 				</NavbarContent>
 			</Navbar>
-		</main >
+		</main>
 	);
 };
 
