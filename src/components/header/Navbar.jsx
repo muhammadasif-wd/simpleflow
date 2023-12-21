@@ -98,7 +98,7 @@ const Header = () => {
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/contacts">
+						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/contact">
 							Contact
 						</Link>
 					</NavbarItem>
