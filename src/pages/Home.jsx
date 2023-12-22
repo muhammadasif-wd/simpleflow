@@ -6,7 +6,7 @@ const Around = lazy(() => import('../components/home/Around'));
 const OurTeams = lazy(() => import('../components/home/OurTeams'));
 const AboutMe = lazy(() => import('../components/home/AboutMe'));
 const Features = lazy(() => import('../components/home/Features'));
-const News = lazy(() => import('../components/home/News'));
+const Events = lazy(() => import('../components/home/Events'));
 const PricingCard = lazy(() => import('../components/home/PricingCard'));
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
 			<AboutMe />
 			<Features />
 			<PricingCard />
-			<News />
+			<Events />
 		</Suspense>
 	);
 };

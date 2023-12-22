@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router';
 import Header from './components/header/Navbar';
 import publicRoutes from './routes/publicRoutes';
 import Loading from './shared/Loading';
+import Footer from './components/header/Footer';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					})}
 				</Routes>
 			</main>
+			<Footer />
 		</Suspense>
 	);
 }
