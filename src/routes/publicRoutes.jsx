@@ -1,4 +1,5 @@
 import { lazy } from 'react';
+const Admin = lazy(() => import('../admin/Admin'));
 const Team = lazy(() => import('../pages/about/Team'));
 const Events = lazy(() => import('../pages/about/Events'));
 const Services = lazy(() => import('../pages/Services'));
@@ -15,6 +16,7 @@ const publicRoutes = [
 	{ path: '/services', Component: Services },
 	{ path: '/portfolios', Component: Portfolio },
 	{ path: '/contact', Component: Contact },
+	{ path: '/admin', Component: Admin },
 ];
 
 export default publicRoutes;
