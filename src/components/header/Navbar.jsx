@@ -4,7 +4,6 @@ import {
 	DropdownItem,
 	DropdownMenu,
 	DropdownTrigger,
-	Link,
 	Navbar,
 	NavbarBrand,
 	NavbarContent,
@@ -12,6 +11,7 @@ import {
 } from '@nextui-org/react';
 import React from 'react';
 import { images } from '../../shared/images';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 	return (
@@ -21,7 +21,7 @@ const Header = () => {
 					justify="center"
 				>
 					<NavbarBrand>
-						<Link href="/">
+						<Link to="/">
 							<p className="font-bold text-inherit text-white text-2xl">Simple Flow</p>
 						</Link>
 					</NavbarBrand>
@@ -54,7 +54,7 @@ const Header = () => {
 							>
 								<DropdownItem
 									as={Link}
-									href="/about-us"
+									to="/about-us"
 									key="About Us"
 									className="text-dark text-base"
 								>
@@ -62,7 +62,7 @@ const Header = () => {
 								</DropdownItem>
 								<DropdownItem
 									as={Link}
-									href="/our-team"
+									to="/our-team"
 									key="Our Team"
 									className="text-dark text-base"
 								>
@@ -70,7 +70,7 @@ const Header = () => {
 								</DropdownItem>
 								<DropdownItem
 									as={Link}
-									href="/career"
+									to="/career"
 									key="Career"
 									className="text-dark text-base"
 								>
@@ -78,7 +78,7 @@ const Header = () => {
 								</DropdownItem>
 								<DropdownItem
 									as={Link}
-									href="/events"
+									to="/events"
 									key="Events "
 									className="text-dark text-base"
 								>
@@ -88,17 +88,17 @@ const Header = () => {
 						</Dropdown>
 					</NavbarItem>
 					<NavbarItem>
-						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/services">
+						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" to="/services">
 							Services
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/portfolios">
+						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" to="/portfolios">
 							Portfolio
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" href="/contact">
+						<Link className="p-0 text-base bg-transparent data-[hover=true]:bg-transparent text-white font-medium" to="/contact">
 							Contact
 						</Link>
 					</NavbarItem>
