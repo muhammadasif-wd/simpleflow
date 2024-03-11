@@ -7,6 +7,8 @@ const Contact = lazy(() => import('../pages/Contact'));
 const Home = lazy(() => import('../pages/Home'));
 const About = lazy(() => import('../pages/about/About'));
 const LogIn = lazy(() => import('../pages/login/LogIn'));
+const MainDashBoard = lazy(() => import('../pages/DashBoard/MainDashBoard/MainDashBoard'));
+
 
 const publicRoutes = [
 	{ path: '/', Component: Home },
@@ -17,6 +19,14 @@ const publicRoutes = [
 	{ path: '/portfolios', Component: Portfolio },
 	{ path: '/contact', Component: Contact },
 	{ path: '/login', Component: LogIn },
+
+
+
+	// dashBoard section
+
+	{ path: '/main-dashboard', Component: MainDashBoard },
+
+
 ];
 
 export default publicRoutes;
