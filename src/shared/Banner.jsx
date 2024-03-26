@@ -7,6 +7,7 @@ const Title = lazy(() => import('./Title'))
 const Banner = ({ title }) => {
     return (
         <Suspense fallback={<Loading />}>
+            
             <div className='mt-11'>
                 <div
                     style={{ backgroundImage: `url(${images.banner})`, backgroundRepeat: 'no-repeat' }} className={`max-w-full text-white`}>
